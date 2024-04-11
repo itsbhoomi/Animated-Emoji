@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.face {
+    width: 250px;
+    height: 250px;
+    background-color: #fbbc04;
+    border: #000 solid 2px;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotate 4s linear 1;
+}
+
+@keyframes rotate {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: 1300px;
+        top: 0;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+
+    }
+}
+
+.eyebrow {
+    width: 40px;
+    height: 1px;
+    border: #000 solid 1px;
+    border-radius: 50% 50% 0% 0%;
+    position: absolute;
+    top: 55px;
+    left: 60px;
+}
+
+.eyebrow2 {
+    position: absolute;
+    left: 140px;
+}
+
+.eye {
+    width: 27px;
+    height: 40px;
+    border: #000 solid 1px;
+    border-radius: 60%;
+    position: absolute;
+    top: 73px;
+    left: 65px;
+}
+
+
+.eye2 {
+    position: absolute;
+    left: 145px;
+    animation: blink 1s ease 1;
+    animation-delay: 4s;
+}
+
+@keyframes blink {
+    100%{transform: scale(1.7,0.2);}
+}
+
+.nose {
+    width: 6px;
+    height: 42px;
+    border: #000 solid 1px;
+    border-radius: 60%;
+    position: absolute;
+    top: 130px;
+    left: 114px;
+}
+
+.smile {
+    width: 75px;
+    height: 25px;
+    border: #000 solid 1px;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 196px;
+    left: 84px;
+}
